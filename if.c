@@ -103,5 +103,28 @@ int main(void) {
 		ch = 'F';
 	printf("입력하신 점수는 %d점, 등급은 %c입니다.\n", score, ch);
 	return 0;
+
+	// 단계별 분류에 따른 버스요금 계산
+	int pay = 1000, age;
+	double rate = 0.0;
+
+	scanf("%d", &age);
 	
+	if (age < 3 || age > 65) {
+		rate = 0.0;
+	}
+	else if (age < 13) {
+		rate = 0.5;
+	}
+	else if (age < 19) {
+		rate = 0.75;
+	}
+	else {
+		rate = 1.0;
+	}
+	printf("최종요금 : %.0f원\n", (double)pay * rate);
+	return 0;
+
+
+
 }
