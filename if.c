@@ -3,7 +3,7 @@
 
 int main(void) {
 
-	// ¼¼ Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ Å« ¼ö Ãâ·Â - ¼­¹ÙÀÌ¹ú Çü½Ä
+	// ì„¸ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ í° ìˆ˜ ì¶œë ¥ - ì„œë°”ì´ë²Œ í˜•ì‹
 	int num1, num2, num3;
 	int nMax = 0;
 
@@ -22,40 +22,40 @@ int main(void) {
 	printf("MAX : %d\n", nMax);
 	return 0;
 	
-	// ¹ö½º¿ä±İ °è»ê
+	// ë²„ìŠ¤ìš”ê¸ˆ ê³„ì‚°
 	int pay = 1000;
 	int age;
 
-	printf("ÀÔ·Â: ");
+	printf("ì…ë ¥: ");
 	scanf("%d", &age);
 
 	if (age < 20) {
-		printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * 0.75);
+		printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * 0.75);
 	}
 	else {
-		printf("ÃÖÁ¾¿ä±İ : %d¿ø\n", pay);
+		printf("ìµœì¢…ìš”ê¸ˆ : %dì›\n", pay);
 	}
 	return 0;
 	
-	// ´Ù¸£°Ô Ç®¾îº¸±â
+	// ë‹¤ë¥´ê²Œ í’€ì–´ë³´ê¸°
 	int pay = 1000;
 	int age;
 	double rate = 0.0;
 
-	printf("ÀÔ·Â: ");
+	printf("ì…ë ¥: ");
 	scanf("%d", &age);
 
 	if (age < 20) {
 		rate = 0.25;
-		printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+		printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 	}
 	else {
 		rate = 0;
-		printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+		printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 	}
 	return 0;
 	
-	// ³ªÀÌ¿¡ µû¸¥ ºĞ·ù ¹× ¿ä±İ°è»ê
+	// ë‚˜ì´ì— ë”°ë¥¸ ë¶„ë¥˜ ë° ìš”ê¸ˆê³„ì‚°
 	int pay = 1000;
 	int age;
 	double rate = 0.0;
@@ -65,30 +65,30 @@ int main(void) {
 	if (age < 13) {
 		if (age < 3) {
 			rate = 1.0;
-			printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+			printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 		}
 		else {
 			rate = 0.5;
-			printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+			printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 		}
 	}
 	else {
 		if (age < 19) {
 			rate = 0.25;
-			printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+			printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 		}
 		else {
 			rate = 0.0;
-			printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", pay * (1 - rate));
+			printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", pay * (1 - rate));
 		}
 	}
 	return 0;
 	
-	// ¼ºÀû¿¡ µû¸¥ µî±Ş ºÎ¿©
+	// ì„±ì ì— ë”°ë¥¸ ë“±ê¸‰ ë¶€ì—¬
 	int score;
 	char ch;
 
-	printf("¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%d", &score);
 
 	if (score >= 90)
@@ -101,10 +101,10 @@ int main(void) {
 		ch = 'D';
 	else
 		ch = 'F';
-	printf("ÀÔ·ÂÇÏ½Å Á¡¼ö´Â %dÁ¡, µî±ŞÀº %cÀÔ´Ï´Ù.\n", score, ch);
+	printf("ì…ë ¥í•˜ì‹  ì ìˆ˜ëŠ” %dì , ë“±ê¸‰ì€ %cì…ë‹ˆë‹¤.\n", score, ch);
 	return 0;
 
-	// ´Ü°èº° ºĞ·ù¿¡ µû¸¥ ¹ö½º¿ä±İ °è»ê
+	// ë‹¨ê³„ë³„ ë¶„ë¥˜ì— ë”°ë¥¸ ë²„ìŠ¤ìš”ê¸ˆ ê³„ì‚°
 	int pay = 1000, age;
 	double rate = 0.0;
 
@@ -122,9 +122,6 @@ int main(void) {
 	else {
 		rate = 1.0;
 	}
-	printf("ÃÖÁ¾¿ä±İ : %.0f¿ø\n", (double)pay * rate);
+	printf("ìµœì¢…ìš”ê¸ˆ : %.0fì›\n", (double)pay * rate);
 	return 0;
-
-
-
 }
